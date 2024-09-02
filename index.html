@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAN Card Application Form</title>
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="particles-js"></div>
+    <div class="container">
+        <h1>PAN Card Application</h1>
+        <form id="panCardForm" novalidate>
+            <!-- Full Name -->
+            <div class="form-group">
+                <label for="fullName">Full Name (as per Aadhaar): <span class="required">*</span></label>
+                <input type="text" id="fullName" name="fullName" required placeholder="Enter your full name">
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Father's Name -->
+            <div class="form-group">
+                <label for="fatherName">Father's Name: <span class="required">*</span></label>
+                <input type="text" id="fatherName" name="fatherName" required placeholder="Enter your father's name">
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Date of Birth -->
+            <div class="form-group">
+                <label for="dob">Date of Birth: <span class="required">*</span></label>
+                <input type="date" id="dob" name="dob" required>
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Gender -->
+            <div class="form-group">
+                <label>Gender: <span class="required">*</span></label>
+                <div class="gender-options">
+                    <label for="male">
+                        <input type="radio" id="male" name="gender" value="Male" required> Male
+                    </label>
+                    <label for="female">
+                        <input type="radio" id="female" name="gender" value="Female"> Female
+                    </label>
+                </div>
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Mobile Number -->
+            <div class="form-group">
+                <label for="mobile">Mobile Number: <span class="required">*</span></label>
+                <input type="tel" id="mobile" name="mobile" required placeholder="Enter your mobile number">
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Email Address -->
+            <div class="form-group">
+                <label for="email">Email Address: <span class="required">*</span></label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email address">
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Aadhaar Number -->
+            <div class="form-group">
+                <label for="aadhaar">Aadhaar Number: <span class="required">*</span></label>
+                <input type="text" id="aadhaar" name="aadhaar" required placeholder="Enter your 12-digit Aadhaar number">
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Residential Address -->
+            <div class="form-group">
+                <label for="address">Residential Address: <span class="required">*</span></label>
+                <textarea id="address" name="address" rows="4" required placeholder="Enter your residential address"></textarea>
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Identity Proof Upload -->
+            <div class="form-group">
+                <label for="identityProof">Identity Proof (PDF, JPEG, PNG): <span class="required">*</span></label>
+                <input type="file" id="identityProof" name="identityProof" accept=".pdf, .jpeg, .jpg, .png" required>
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Declaration -->
+            <div class="form-group declaration">
+                <label for="declaration">
+                    <input type="checkbox" id="declaration" name="declaration" required>
+                    I hereby declare that the information provided above is true and correct to the best of my knowledge.
+                </label>
+                <small class="error-message"></small>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="form-group">
+                <button type="submit">Submit Application</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Link to external JavaScript -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+
+</body>
+</html>
